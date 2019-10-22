@@ -1,7 +1,50 @@
-string = "geeks for geeks geeks geeks geeks"
+# import csv
+# from collections import defaultdict, Counter
+#
+# with open('data/survey_results_public.csv', encoding="utf8") as f:
+#     csv_reader = csv.DictReader(f)
+#     language_counter=Counter()
+#     #for i in range(5):
+#     #total=0
+#     dev_type_info={}
+#     for line in csv_reader:
+#         dev_types=line['DevType'].split(';')
+#         #print(dev_types)
+#         for dev_type in dev_types:
+#             dev_type_info.setdefault(dev_type, {
+#                 'total': 0,
+#                 'language_counter': Counter()
+#             })
+#
+#             languages = line['LanguageWorkedWith'].split(';')
+#             dev_type_info[dev_type]['language_counter'].update(languages)
+#             dev_type_info[dev_type]['total'] += 1
+#
+# for dev_type, info in dev_type_info.items():
+#     print(dev_type)
+#
+#     for language, value in info['language_counter'].most_common(5):
+#         language_pct = (value / info['total']) * 100
+#         language_pct = round(language_pct, 2)
+#
+#         print("\t",language, ':', language_pct,'%')# for key in dev_type_info:
+#     print(key)
+            #language_counter[line['LanguageWorkedWith']]+=1
+    #         languages=line['LanguageWorkedWith'].split(';')
+    #         language_counter.update(languages)
+    #         total+=1
+    #
+    #
+    # for language,value in language_counter.most_common(5):
+    #     language_pct=(value/total)*100
+    #     language_pct=round(language_pct,2)
+    #     print("Percentage People liked",language,':',language_pct)
 
-# Prints the string by replacing geeks by Geeks
-print(string.replace("geeks", "Geeks"))
-
-# Prints the string by replacing only 3 occurrence of Geeks
-print(string.replace("geeks", "GeeksforGeeks", 3))
+            # for language in languages:
+            #     language_counter[language] +=1
+            # print(language_counter)
+# print(language_counter.most_common(5))
+    # counts[line['Hobbyist']] +=1
+# total=counts['Yes']+counts['No']
+# print("Percentage Yes Count:",counts['Yes']/total)
+# print("Percentage No Count:",counts['No']/total)
