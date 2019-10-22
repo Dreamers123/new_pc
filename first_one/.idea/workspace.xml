@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/data_science_corey.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="43" />
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -770,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/data_science_corey.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="43" />
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
