@@ -39,7 +39,7 @@ models.append(('SVM', SVC()))
 array = iris.values
 X = array[:,0:4]
 Y = array[:,4]
-validation_size = 0.20
+validation_size = 0.30
 seed = 7
 X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
 # Test options and evaluation metric
@@ -54,11 +54,12 @@ for name, model in models:
     results.append(cv_results)
     names.append(name)
     msg =(name, cv_results.mean(), cv_results.std())
-    print(msg)
+    #print(msg)
 #plt.show()
 knn = KNeighborsClassifier()
 knn.fit(X_train, Y_train)
 predictions = knn.predict(X_validation)
-print(accuracy_score(Y_validation, predictions))
+#print(predictions)
+# print(accuracy_score(Y_validation, predictions))
 print(confusion_matrix(Y_validation, predictions))
-print(classification_report(Y_validation, predictions))
+# print(classification_report(Y_validation, predictions))
