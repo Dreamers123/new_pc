@@ -27,17 +27,18 @@ with urlopen("http://10.11.200.67:8000/api/products") as response:
       data=json.loads(source)
       users = data
       #print(users)
-y = json.dumps(users)
+#y = json.dumps(users)
+#print(y)
 #y=y.replace('[', '')
 #y=y.replace(']', '')
 #print(y)
 #x="'"+y+"'"
 #print(x)
 #x = json.loads(y)
-x = json.loads(y)
-print(x)
+#x = json.loads(y)
+#print(x)
 for i in range(0,10):
- z=x['data'][i]
+ z=users['data'][i]
  #print('\t')
  print(z["name"],'-',z["totalPrice"])
 # for key, value in x.items():

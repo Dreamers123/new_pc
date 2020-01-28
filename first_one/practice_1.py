@@ -27,15 +27,14 @@ with urlopen("http://10.11.200.67:8000/users") as response:
       data=json.loads(source)
       users = data
       #print(users)
-y = json.dumps(users)
-y=y.replace('[', '')
-y=y.replace(']', '')
+# y = json.dumps(users)
+# y=y.replace('[', '')
+# y=y.replace(']', '')
 for i in range(1,10):
     z = users[i]['name']
     # print('\t')
-    print(z)
+    print(users[i]['name'],'-',users[i]['email'])
 
-#
 #print(y)
 #x="'"+y+"'"
 #print(x)
