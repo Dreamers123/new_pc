@@ -2,7 +2,6 @@ import json
 from urllib.request import urlopen
 users = {}
 products={}
-
 # import requests
 #
 # url = 'http://127.0.0.1:8000/api/products'
@@ -23,7 +22,7 @@ products={}
 
 
 #username=input("Enter Name:")
-with urlopen("http://127.0.0.1:8000/api/products") as response:
+with urlopen("http://10.11.200.67:8000/api/products") as response:
       source = response.read()
       data=json.loads(source)
       users = data
@@ -36,10 +35,11 @@ y = json.dumps(users)
 #print(x)
 #x = json.loads(y)
 x = json.loads(y)
-for i in range(1,10):
+print(x)
+for i in range(0,10):
  z=x['data'][i]
  #print('\t')
- print(z["name"],z["totalPrice"])
+ print(z["name"],'-',z["totalPrice"])
 # for key, value in x.items():
 #     print('\t'+ key, value)
 
